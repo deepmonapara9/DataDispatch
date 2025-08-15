@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Auto-Update Newsletter Script
+DataDispatch Auto-Update Newsletter Script
 
 This script automatically:
 1. Generates fresh newsletter content using your LLM
@@ -110,7 +110,7 @@ def main():
 
     args = parser.parse_args()
 
-    print("🚀 Newsletter Auto-Updater")
+    print("🚀 DataDispatch Newsletter Auto-Updater")
     print(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print()
 

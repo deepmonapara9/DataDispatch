@@ -1,4 +1,4 @@
-# AI-Powered Newsletter Platform
+# DataDispatch - AI-Powered Newsletter Platform
 
 A complete newsletter platform with AI content generation, subscription management, automated email delivery, and dynamic content updates.
 

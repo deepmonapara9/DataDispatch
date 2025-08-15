@@ -36,8 +36,8 @@ def get_db():
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="AI Newsletter Platform API",
-    description="Backend API for AI-powered newsletter platform",
+    title="DataDispatch API",
+    description="Backend API for DataDispatch AI-powered newsletter platform",
     version="1.0.0",
 )
 
@@ -69,7 +69,7 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup_event():
     init_db()
-    print("✅ Newsletter API started successfully!")
+    print("✅ DataDispatch API started successfully!")
     print(f"📧 CORS enabled for: {origins}")
     if DEV_MODE:
         print("🔓 DEV_MODE CORS regex enabled: allow all origins")

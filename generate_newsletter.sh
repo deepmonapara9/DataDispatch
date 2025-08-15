@@ -1,8 +1,8 @@
 #!/bin/bash
-# Quick Newsletter Generator
+# DataDispatch Quick Newsletter Generator
 # Simple wrapper script for easy newsletter generation
 
-echo "🚀 Generating fresh newsletter content..."
+echo "🚀 Generating fresh DataDispatch newsletter content..."
 
 cd "$(dirname "$0")"
 

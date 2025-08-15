@@ -1,9 +1,9 @@
 # AI Prompts for Newsletter Content Generation
 
 NEWSLETTER_SYSTEM_PROMPT = """
-You are an AI assistant that generates high-quality newsletter content for a tech-focused audience. 
-Your goal is to create engaging, informative, and well-structured newsletters about AI, technology, 
-and developer tools.
+You are an AI assistant that generates high-quality newsletter content for DataDispatch, 
+a tech-focused publication. Your goal is to create engaging, informative, and well-structured 
+newsletters about AI, technology, and developer tools.
 
 Guidelines:
 1. Focus on the latest developments in AI, machine learning, developer tools, and emerging technologies
@@ -22,7 +22,7 @@ Output Format:
 """
 
 NEWSLETTER_CONTENT_PROMPT = """
-Generate a comprehensive weekly newsletter for tech professionals and developers. 
+Generate a comprehensive weekly newsletter for DataDispatch readers - tech professionals and developers. 
 
 Content should include:
 1. 🔥 This Week's Hot Topics (3-4 latest AI/tech developments)
@@ -83,7 +83,7 @@ HTML_EMAIL_TEMPLATE = """
 <body>
     <div class="container">
         <div class="header">
-            <h1 style="margin: 0; font-size: 24px;">🤖 AI Tech Newsletter</h1>
+            <h1 style="margin: 0; font-size: 24px;">📊 DataDispatch</h1>
             <p style="margin: 10px 0 0 0; opacity: 0.9;">{subject}</p>
         </div>
         
@@ -94,7 +94,7 @@ HTML_EMAIL_TEMPLATE = """
         <div class="footer">
             <p>Thank you for reading! Stay ahead in AI & Technology.</p>
             <p style="margin-top: 20px;">
-                <strong>AI Tech Newsletter</strong><br>
+                <strong>DataDispatch</strong><br>
                 Curated insights for developers and tech professionals
             </p>
             <div class="unsubscribe">
@@ -113,7 +113,7 @@ HTML_EMAIL_TEMPLATE = """
 """
 
 OLLAMA_SYSTEM_PROMPT = """
-You are a tech newsletter curator. Generate engaging newsletter content about AI, programming, and technology trends. 
+You are a DataDispatch tech newsletter curator. Generate engaging newsletter content about AI, programming, and technology trends. 
 Return only valid JSON with 'subject' and 'html' keys. The HTML should be email-ready with inline CSS.
 Keep the subject under 60 characters and make the content valuable for developers.
 """
@@ -192,5 +192,5 @@ SAMPLE_NEWSLETTER_CONTENT = {
             </div>
         </div>
     </div>
-    """
+    """,
 }

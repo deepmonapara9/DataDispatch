@@ -18,7 +18,7 @@ class EmailSender:
         self.smtp_password = os.getenv("SMTP_PASSWORD")
         self.smtp_server = "smtp.gmail.com"
         self.smtp_port = 587
-        self.from_name = os.getenv("NEWSLETTER_FROM_NAME", "AI Tech Newsletter")
+        self.from_name = os.getenv("NEWSLETTER_FROM_NAME", "DataDispatch")
         self.max_batch_size = 50  # Gmail's BCC limit
 
         if not self.smtp_email or not self.smtp_password:
@@ -241,13 +241,13 @@ class EmailSender:
         if not self.test_smtp_connection():
             return False
 
-        test_subject = "🧪 Newsletter Platform Test Email"
+        test_subject = "🧪 DataDispatch Platform Test Email"
         test_html = """
         <html>
         <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
             <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px;">
                 <h1>🧪 Test Email</h1>
-                <p>This is a test email from your Newsletter Platform!</p>
+                <p>This is a test email from your DataDispatch Platform!</p>
             </div>
             
             <div style="padding: 30px 0;">
@@ -267,7 +267,7 @@ class EmailSender:
             
             <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-top: 20px;">
                 <p style="margin: 0; font-size: 14px; color: #666;">
-                    This is a test email from your Newsletter Platform.<br>
+                    This is a test email from your DataDispatch Platform.<br>
                     <a href="{{UNSUBSCRIBE_LINK}}">Unsubscribe</a>
                 </p>
             </div>
