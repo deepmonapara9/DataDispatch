@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsubscribe - AI Tech Newsletter</title>
+    <meta
+      name="description"
+      content="Unsubscribe from AI Tech Newsletter. We're sorry to see you go!"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <div class="logo">
+            <h1>🤖 AI Tech Newsletter</h1>
+          </div>
+          <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#subscribe">Subscribe</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Unsubscribe Section -->
+    <section class="unsubscribe-section">
+      <div class="container">
+        <div class="unsubscribe-content">
+          <h1>Sorry to see you go! 😢</h1>
+          <p>
+            We understand that your inbox priorities change. You can unsubscribe
+            from our newsletter at any time.
+          </p>
+
+          <form id="unsubscribeForm" class="unsubscribe-form">
+            <div class="form-group">
+              <label for="unsubscribeEmail"
+                >Enter your email address to unsubscribe:</label
+              >
+              <input
+                type="email"
+                id="unsubscribeEmail"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                class="email-input"
+              />
+              <button type="submit" class="unsubscribe-btn" id="unsubscribeBtn">
+                <span class="btn-text">Unsubscribe</span>
+                <span class="btn-loading" style="display: none">
+                  <span class="spinner"></span>
+                  Processing...
+                </span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div
+            id="unsubscribeSuccess"
+            class="success-message"
+            style="display: none"
+          >
+            <div class="success-content">
+              <span class="success-icon">✅</span>
+              <h3>You've been unsubscribed</h3>
+              <p>
+                You will no longer receive newsletters from us. We hope to see
+                you again in the future!
+              </p>
+              <a href="index.html" class="back-home-btn">Back to Home</a>
+            </div>
+          </div>
+
+          <!-- Error Message -->
+          <div
+            id="unsubscribeError"
+            class="error-message"
+            style="display: none"
+          >
+            <div class="error-content">
+              <span class="error-icon">❌</span>
+              <h3>Something went wrong</h3>
+              <p id="unsubscribeErrorText">
+                Please try again later or contact our support.
+              </p>
+            </div>
+          </div>
+
+          <!-- Alternative Options -->
+          <div class="alternatives" id="alternatives">
+            <h3>Before you go, would you prefer to:</h3>
+            <div class="alternative-options">
+              <div class="option-card">
+                <h4>📧 Reduce frequency?</h4>
+                <p>
+                  We could send you newsletters less frequently instead of
+                  stopping completely.
+                </p>
+                <a
+                  href="mailto:contact@your-domain.com?subject=Reduce Newsletter Frequency"
+                  class="option-btn"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="option-card">
+                <h4>🎯 Change topics?</h4>
+                <p>
+                  Let us know if you'd prefer different types of content or
+                  topics.
+                </p>
+                <a
+                  href="mailto:contact@your-domain.com?subject=Change Newsletter Topics"
+                  class="option-btn"
+                  >Give Feedback</a
+                >
+              </div>
+            </div>
+
+            <div class="feedback-section">
+              <h4>Help us improve (Optional)</h4>
+              <p>
+                Tell us why you're unsubscribing so we can improve our
+                newsletter:
+              </p>
+              <div class="feedback-options">
+                <label>
+                  <input type="checkbox" name="feedback" value="too_frequent" />
+                  Too frequent
+                </label>
+                <label>
+                  <input type="checkbox" name="feedback" value="not_relevant" />
+                  Content not relevant
+                </label>
+                <label>
+                  <input type="checkbox" name="feedback" value="too_long" />
+                  Newsletters too long
+                </label>
+                <label>
+                  <input type="checkbox" name="feedback" value="other" />
+                  Other reason
+                </label>
+              </div>
+              <textarea
+                id="feedbackText"
+                placeholder="Additional feedback (optional)"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>🤖 AI Tech Newsletter</h3>
+            <p>Thank you for being part of our community.</p>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="mailto:contact@your-domain.com">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 AI Tech Newsletter. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

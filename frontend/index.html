@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      AI Tech Newsletter - Stay Updated with the Latest in AI & Tech
+    </title>
+    <meta
+      name="description"
+      content="Get weekly AI and technology updates delivered to your inbox. Expert insights, latest tools, and industry trends."
+    />
+    <meta
+      name="keywords"
+      content="AI newsletter, technology news, developer tools, artificial intelligence, tech updates"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.com/" />
+    <meta
+      property="og:title"
+      content="AI Tech Newsletter - Weekly AI & Technology Updates"
+    />
+    <meta
+      property="og:description"
+      content="Get weekly AI and technology updates delivered to your inbox. Expert insights, latest tools, and industry trends."
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://your-domain.com/" />
+    <meta
+      property="twitter:title"
+      content="AI Tech Newsletter - Weekly AI & Technology Updates"
+    />
+    <meta
+      property="twitter:description"
+      content="Get weekly AI and technology updates delivered to your inbox. Expert insights, latest tools, and industry trends."
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <div class="logo">
+            <h1>🤖 AI Tech Newsletter</h1>
+          </div>
+          <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#subscribe">Subscribe</a>
+            <a href="unsubscribe.html">Unsubscribe</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Stay Ahead in <span class="gradient-text">AI & Technology</span>
+          </h1>
+          <p class="hero-subtitle">
+            Get weekly curated insights on artificial intelligence, developer
+            tools, and cutting-edge technology trends delivered straight to your
+            inbox.
+          </p>
+          <div class="hero-features">
+            <div class="feature">
+              <span class="feature-icon">🧠</span>
+              <span>AI-Powered Content</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">📅</span>
+              <span>Weekly Updates</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🎯</span>
+              <span>Curated for Developers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="subscribe-section">
+      <div class="container">
+        <div class="subscribe-content">
+          <h2>Join 1000+ Tech Professionals</h2>
+          <p>
+            Get the latest AI and technology insights delivered every Monday
+            morning.
+          </p>
+
+          <form id="subscribeForm" class="subscribe-form">
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                class="email-input"
+              />
+              <button type="submit" class="subscribe-btn" id="subscribeBtn">
+                <span class="btn-text">Subscribe Free</span>
+                <span class="btn-loading" style="display: none">
+                  <span class="spinner"></span>
+                  Subscribing...
+                </span>
+              </button>
+            </div>
+            <p class="privacy-note">
+              🔒 We never share your email. Unsubscribe anytime with one click.
+            </p>
+          </form>
+
+          <!-- Success Message -->
+          <div
+            id="successMessage"
+            class="success-message"
+            style="display: none"
+          >
+            <div class="success-content">
+              <span class="success-icon">✅</span>
+              <h3>Welcome aboard!</h3>
+              <p>
+                Thank you for subscribing! You'll receive your first newsletter
+                next Monday.
+              </p>
+            </div>
+          </div>
+
+          <!-- Error Message -->
+          <div id="errorMessage" class="error-message" style="display: none">
+            <div class="error-content">
+              <span class="error-icon">❌</span>
+              <h3>Oops! Something went wrong</h3>
+              <p id="errorText">Please try again later.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <h2>Why Subscribe?</h2>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">🚀</div>
+              <h3>Latest AI Breakthroughs</h3>
+              <p>
+                Stay updated with the newest developments in artificial
+                intelligence, machine learning, and emerging technologies.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">🛠️</div>
+              <h3>Developer Tools & Resources</h3>
+              <p>
+                Discover new tools, frameworks, and resources that can boost
+                your productivity and development workflow.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">📈</div>
+              <h3>Industry Insights</h3>
+              <p>
+                Get expert analysis on tech trends, market movements, and
+                predictions for the future of technology.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">⚡</div>
+              <h3>Quick & Actionable</h3>
+              <p>
+                Each newsletter is designed to be read in under 5 minutes with
+                actionable insights you can apply immediately.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Preview -->
+    <section class="preview-section">
+      <div class="container">
+        <h2>What You'll Get</h2>
+        <div class="newsletter-preview">
+          <div class="preview-header">
+            <h3>📧 Weekly AI Tech Update #42</h3>
+            <span class="preview-date">Every Monday</span>
+          </div>
+          <div class="preview-content">
+            <div class="preview-section-item">
+              <h4>🔥 This Week's Hot Topics</h4>
+              <ul>
+                <li>OpenAI's latest model breakthrough</li>
+                <li>New JavaScript framework gaining traction</li>
+                <li>AI coding assistants comparison</li>
+              </ul>
+            </div>
+            <div class="preview-section-item">
+              <h4>🛠️ Tools of the Week</h4>
+              <ul>
+                <li>AI-powered code review tool</li>
+                <li>New design system for developers</li>
+                <li>Performance monitoring solution</li>
+              </ul>
+            </div>
+            <div class="preview-section-item">
+              <h4>📚 Learning Resources</h4>
+              <ul>
+                <li>Advanced machine learning course</li>
+                <li>System design interview guide</li>
+                <li>Tech podcast recommendations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>🤖 AI Tech Newsletter</h3>
+            <p>
+              Keeping developers and tech enthusiasts informed about the latest
+              in AI and technology.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#subscribe">Subscribe</a>
+            <a href="unsubscribe.html">Unsubscribe</a>
+            <a href="mailto:contact@your-domain.com">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 AI Tech Newsletter. All rights reserved.</p>
+          <p>We respect your privacy and never share your email address.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
