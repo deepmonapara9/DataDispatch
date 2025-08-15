@@ -157,11 +157,14 @@ def main():
 
         # Initialize database
         logger.log("💾 Initializing database connection...")
+        # Change to backend directory to use backend/newsletter.db
+        original_cwd = os.getcwd()
+        os.chdir(str(project_root / "backend"))
         init_db()
         db_session = SessionLocal()
 
         try:
-            # Get active subscribers
+            # Get active subscribers (while in backend directory)
             logger.log("👥 Fetching active subscribers...")
             recipients = get_active_subscribers(db_session)
 
@@ -170,6 +173,9 @@ def main():
                 return
 
             logger.log(f"📊 Found {len(recipients)} active subscribers")
+
+            # Change back to original directory for content generation
+            os.chdir(original_cwd)
 
             # Generate newsletter content
             logger.log("🤖 Generating newsletter content with AI...")

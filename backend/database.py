@@ -13,12 +13,9 @@ from sqlalchemy.orm import (
 
 try:
     from dotenv import load_dotenv
-
     load_dotenv()
 except ImportError:
     print("Warning: python-dotenv not installed. Using environment variables directly.")
-
-load_dotenv()
 
 # Database configuration
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./newsletter.db")
