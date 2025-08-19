@@ -97,7 +97,7 @@ ollama pull llama3.2:1b  # Pull required model
 ## 🔧 Usage
 
 ### Web Interface
-- **Frontend**: http://localhost:3001 (dev) or http://localhost:3002 (production)
+- **Frontend**: http://localhost:3000 
 - **Backend API**: http://localhost:8000
 - **API Docs**: http://localhost:8000/docs
 
