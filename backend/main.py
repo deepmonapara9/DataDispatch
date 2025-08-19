@@ -9,8 +9,8 @@ import traceback
 from dotenv import load_dotenv
 
 # Import our modules
-from database import SubscriberDB, init_db
-from models import SubscribeRequest, UnsubscribeRequest, APIResponse
+from .database import SubscriberDB, init_db
+from .models import SubscribeRequest, UnsubscribeRequest, APIResponse
 
 # Load environment variables
 load_dotenv()
@@ -45,8 +45,10 @@ app = FastAPI(
 DEV_MODE = os.getenv("DEBUG", "False").lower() == "true"
 origins = [
     "http://localhost:3000",
+    "http://localhost:3001",
     "http://localhost:8080",
     "http://127.0.0.1:3000",
+    "http://127.0.0.1:3001",
     "http://127.0.0.1:8080",
     os.getenv("FRONTEND_URL", ""),
     "null",  # allow file:// origins in browsers (Origin: null)
